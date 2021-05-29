@@ -23,7 +23,6 @@
                text-decoration: none;
            }
            </style>
-           {{-- <title>@yield('title')</title> --}}
     </head>
     <body>
         <p><h1>Halaman Home</h1></p>
@@ -56,7 +55,5 @@
                 </tbody>
             </table>
         </div>
-        {{-- <title>@yield('container')</title> --}}
-
     </body>
 </html>
