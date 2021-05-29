@@ -13,7 +13,12 @@ class Mahasiswa extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('mahasiswa', function (Blueprint $table){
+            $table->increments('id');
+            $table->string('nbi',10);
+            $table->string('nama_mhs', 30);
+            
+        });
     }
 
     /**
