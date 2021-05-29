@@ -17,7 +17,7 @@ class Mahasiswa extends Migration
             $table->increments('id');
             $table->string('nbi',10);
             $table->string('nama_mhs', 30);
-            
+            $table->timestamps();
         });
     }
 
@@ -28,6 +28,6 @@ class Mahasiswa extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('mahasiswa');('table');
     }
 }
